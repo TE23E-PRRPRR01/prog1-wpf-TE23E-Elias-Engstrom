@@ -1,6 +1,11 @@
 {
     "workbench.iconTheme": "vscode-great-icons",
     "git.openRepositoryInParentFolders": "always",
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#3B1D61",
+        "titleBar.activeBackground": "#532888",
+        "titleBar.activeForeground": "#FBF9FD"
+    },
     "editor.codeLens": false,
     "editor.multiCursorModifier": "ctrlCmd",
     "files.autoSave": "afterDelay",
@@ -10,7 +15,6 @@
     "git.postCommitCommand": "sync",
     "sessionlogger.enabled": true,
     "csharp.debug.console": "externalTerminal",
-    "csharp.referencesCodeLens.enabled": false,
     "explorer.compactFolders": false,
     "explorer.sortOrderLexicographicOptions": "unicode",
     "workbench.editorAssociations": {
@@ -42,5 +46,6 @@
         "angelo-breuer.clock": true,
         "ms-dotnettools.vscodeintellicode-csharp": false,
         "GitHub.copilot": false
-  },
+},
+"dotnet.codeLens.enableReferencesCodeLens": false,
 }
