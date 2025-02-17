@@ -12,7 +12,7 @@
         <Label FontSize="30" FontWeight="bold">Hej Världen!!!</Label>
         <StackPanel Orientation="Horizontal">
             <Label>Ange namn:</Label>
-            <TextBox Margin="5" Width="80"></TextBox>
+            <TextBox Margin="5" Width="81"></TextBox>
         </StackPanel>
         <Button
             Background="red" Foreground="yellow" FontSize="20" Padding="10">Klicka för att få virus</Button>
