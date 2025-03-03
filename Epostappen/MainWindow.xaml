@@ -14,7 +14,7 @@
         </StackPanel>
         <StackPanel Orientation="Horizontal" Margin="5">
         <Label Width="120">Ange meddelande: </Label>
-        <TextBox Name="tbxMeddelande" Width="250" Height="100" TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Auto"></TextBox>
+        <TextBox Name="tbxMeddelande" TextChanged="ChangedEpost" Width="250" Height="100" TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Auto"></TextBox>
         </StackPanel>
         <Button Click="KlickSkicka" Margin="10" Padding="10">Skicka!</Button>
         <Label Name="lblStatus" Height="30" Background="#FFF"></Label>
