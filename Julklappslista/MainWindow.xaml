@@ -1,0 +1,30 @@
+﻿<Window x:Class="Julklappslista.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Julklappslista"
+        mc:Ignorable="d"
+        Title="Julklappslistan" Height="450" Width="800" SizeToContent="WidthAndHeight" Background="#EEE">
+    <StackPanel Margin="10">
+        <Label FontSize="30" FontWeight="Bold">Julklappslistan</Label>
+        <StackPanel Name="stpMax" Orientation="Horizontal" Margin="10">
+            <Label>Antal Julklappar:</Label>
+            <TextBox Name="txbAntal" Width="100"></TextBox>
+            <Button Margin="10" Click="KlickAnge">Ange</Button>
+        </StackPanel>
+        <StackPanel Name="stpInmattning" Orientation="Horizontal" Margin="10">
+            <Label>Julklapp:</Label>
+            <TextBox Name="txbJulklapp" Width="100"></TextBox>
+            <Label>Mottagare:</Label>
+            <TextBox Name="txbMottagare" Width="100"></TextBox>
+            <Button Margin="5" Click="KlickLäggTill">Lägg till</Button>
+            <Button Margin="5" Click="KlickBytUt">Byt ut</Button>
+        </StackPanel>
+        <StackPanel Name="stpListan" Margin="10">
+            <Label>Julklappar:</Label>
+            <ListBox Name="lsbJulklappar" Height="120"></ListBox>
+        </StackPanel>
+        <TextBox Name="txbStatus"></TextBox>
+    </StackPanel>
+</Window>
