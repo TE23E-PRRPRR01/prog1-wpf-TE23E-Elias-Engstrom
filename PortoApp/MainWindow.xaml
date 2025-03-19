@@ -1,0 +1,14 @@
+﻿<Window x:Class="PortoApp.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:PortoApp" mc:Ignorable="d" Title="Portoräknare" Height="450" Width="800" SizeToContent="WidthAndHeight" Background="LightGray">
+    <StackPanel>
+        <Label FontWeight="Bold" FontSize="30">Portoräknare</Label>
+        <Label FontWeight="Bold" FontSize="15">Vikt (gram):</Label>
+        <TextBox Name="tbxVikt" Height="20"></TextBox>
+        <Button Click="KlickRäkna" Height="25" Margin="10">Beräkna porto</Button>
+        <Label Name="lblResultat"></Label>
+    </StackPanel>
+</Window>
