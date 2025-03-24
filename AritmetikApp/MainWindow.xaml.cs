@@ -18,7 +18,7 @@ public partial class MainWindow : Window
 {
     public MainWindow()
     {
-        InitializeComponent(tbxTal1, );
+        InitializeComponent();
     }
 
     private void KlickBeräkna(object sender, RoutedEventArgs e)
