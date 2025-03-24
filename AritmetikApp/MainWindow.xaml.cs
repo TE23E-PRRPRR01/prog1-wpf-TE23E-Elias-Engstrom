@@ -18,42 +18,56 @@ public partial class MainWindow : Window
 {
     public MainWindow()
     {
-        InitializeComponent();
+        InitializeComponent(tbxTal1, );
     }
 
     private void KlickBeräkna(object sender, RoutedEventArgs e)
     {
         if (double.TryParse(tbxTal1.Text, out double Tal1) && double.TryParse(tbxTal2.Text, out double Tal2))
         {
-            switch (tbxOperator.Text)
-            {
-                case "+":
-                    lblResultat.Content = $"{Tal1} + {Tal2} = {Tal1 + Tal2}";
-                    break;
-                case "-":
-                    lblResultat.Content = $"{Tal1} - {Tal2} = {Tal1 - Tal2}";
-                    break;
-                case "*":
-                    lblResultat.Content = $"{Tal1} * {Tal2} = {Math.Round(Tal1 * Tal2, 2)}";
-                    break;
-                case "/":
-                    if (Tal2 != 0)
-                    {
-                        lblResultat.Content = $"{Tal1} / {Tal2} = {Math.Round(Tal1 / Tal2, 2)}";
-                    }
-                    else
-                    {
-                        lblResultat.Content = $"Det är olagligt att dividera ett tal med 0";
-                    }
-                    break;
-                default:
-                    lblResultat.Content = $"Ogiltig operator";
-                    break;
-            }
+            lblResultat.Content = FunctionBeräkna(Tal1, Tal2);
         }
         else
         {
             lblResultat.Content = $"Du har inmatat ett ogiltigt värde!";
+        }
+    }
+
+    ///////////////////////////////////////////
+
+    /// <summary>
+    /// funktion som utför beräkningarna
+    /// </summary>
+    /// <param name="Tal1"></param>
+    /// <param name="Tal2"></param>
+    /// <returns></returns> <summary>
+    /// 
+    /// </summary>
+    /// <param name="Tal1"></param>
+    /// <param name="Tal2"></param>
+    /// <returns></returns>
+    public string FunctionBeräkna(double Tal1, double Tal2)
+    {
+
+        switch (tbxOperator.Text)
+        {
+            case "+":
+                return $"{Tal1} + {Tal2} = {Tal1 + Tal2}";
+            case "-":
+                return $"{Tal1} - {Tal2} = {Tal1 - Tal2}";
+            case "*":
+                return $"{Tal1} * {Tal2} = {Math.Round(Tal1 * Tal2, 2)}";
+            case "/":
+                if (Tal2 != 0)
+                {
+                    return $"{Tal1} / {Tal2} = {Math.Round(Tal1 / Tal2, 2)}";
+                }
+                else
+                {
+                    return $"Det är olagligt att dividera ett tal med 0";
+                }
+            default:
+                return $"Ogiltig operator";
         }
     }
 }

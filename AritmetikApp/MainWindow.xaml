@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AritmetikApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" SizeToContent="WidthAndHeight">
+        Title="ArtimetikApp" Height="450" Width="800" SizeToContent="WidthAndHeight">
     <StackPanel>
     <Label FontWeight="Bold" FontSize="30">Aritmetiken</Label>
     <Label FontWeight="Bold">Tal 1:</Label>
